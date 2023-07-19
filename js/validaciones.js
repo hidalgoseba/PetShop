@@ -1,29 +1,4 @@
-// const inputNacimiento = document.querySelector("#birth");
 
-// inputNacimiento.addEventListener('blur', (e) => {
-//     validarNacimiento(e.target);
-// });
-
-
-// function validarNacimiento(input) {
-//     const fechaCliente = new Date(input.value);
-//     let mensaje = "";
-
-//     if(!mayorEdad(fechaCliente)) {
-//         mensaje = "Para registrarte debes tener al menos 18 años";
-//     }
-//     input.setCustomValidity(mensaje);
-// }
-
-// function mayorEdad(fecha) {
-//     const fechaActual = new Date();
-//     const diferenciaFechas = new Date(
-//         fecha.getUTCFullYear() + 18,
-//         fecha.UTCMonth(),
-//         fecha.UTCDate()
-//     );
-//     return diferenciaFechas <= fechaActual;
-// }
 export function valida(input) {
   const tipoDeInput = input.dataset.tipo;
   if (validadores[tipoDeInput]) {
